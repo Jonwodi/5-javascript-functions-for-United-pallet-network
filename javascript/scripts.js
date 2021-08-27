@@ -29,32 +29,51 @@ other supporting functions. */
 
 // Task 1
 function halveNumber() {
-  var number = 20;
-  return number / 2;
+  var number1 = 20;
+  var number2 = 2;
+  var totalNumber = number1 / number2;
+  return totalNumber;
 }
+
 
 console.log(halveNumber());
 
 
 // Task 2
 function multiplyAndAddNumber() {
-  var multiply_and_add_number = 6 * 2 + 3;
-  return multiply_and_add_number;
+  var multiplyAndAdd = (6 * 2) + 3;
+  return multiplyAndAdd;
 }
 
 console.log(multiplyAndAddNumber());
 
 
 //Task 3
+function calculate() {
+  var bigNumber = 1000;
+  var smallNumber = 101;
+  var newNumber = bigNumber / smallNumber;
+  return newNumber;
+}
 
+console.log(calculate())
 
 // Task 4
 function numberArray() {
-  var number_array = [1, 3, 5, 7, 9];
-  return number_array[4];
+  var numberList = [1, 3, 5, 7, 9];
+  return numberList[4];
 }
 
 console.log(numberArray());
 
 
 //Task 5 
+function cardGame() {
+  var player1 = [A, A, A, A, J];
+  var player2 = [A, J, Q, K, A];
+  var cardRanks = [A = 1, J = 11, Q = 12, K = 13];
+  var win;
+  return win = winner;
+
+}
+
