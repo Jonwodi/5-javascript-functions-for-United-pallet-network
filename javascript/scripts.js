@@ -56,7 +56,7 @@ function calculate() {
   return newNumber;
 }
 
-console.log(calculate())
+console.log(calculate());
 
 // Task 4
 function numberArray() {
