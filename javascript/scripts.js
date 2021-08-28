@@ -69,11 +69,23 @@ console.log(numberArray());
 
 //Task 5 
 function cardGame() {
-  var player1 = [A, A, A, A, J];
-  var player2 = [A, J, Q, K, A];
-  var cardRanks = [A = 1, J = 11, Q = 12, K = 13];
-  var win;
-  return win = winner;
-
+  var w = winner();
+  console.log(w);
+  var l = loser();
+  console.log(l);
+  return "card ranks: A = 1, J = 11, Q = 12, K = 13." + " Winning hands(in order of best to worst hand):" + " Four of a kind: Four cards of the same rank." + " Full House: Three cards of the same rank, and two cards of a different matching rank." + " Straight: Five cards in sequence." + " Three of a kind: Three cards of the same rank." + " Two pair: Two cards of a matching rank and another two cards of a different matching rank." + " One pair: Two cards of a matching rank." + " If both players have none of the above, it is a draw." + " If both players have the same type of hand, it is a draw. ";
 }
 
+function winner() {
+  var player1Hand = [1, 1, 1, 1, 11];
+  var winner = "player1 is the winner of the game";
+  return winner + " based on hand. He got a four of a kind hand: A, A, A, A, J or " + player1Hand;
+}
+
+function loser() {
+  var player2Hand = [12, 12, 11, 1, 13];
+  var loser = "player2 is the loser of the game";
+  return loser + " based on hand. He got a one pair hand: Q, Q, J, A, K or " + player2Hand;
+}
+
+console.log(cardGame());
