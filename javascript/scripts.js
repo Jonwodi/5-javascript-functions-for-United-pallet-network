@@ -78,13 +78,15 @@ function cardGame() {
 
 function winner() {
   var player1Hand = [1, 1, 1, 1, 11];
-  var winner = "player1 is the winner of the game";
+  var player1Name = "Sam";
+  var winner = player1Name + " is the winner of the game";
   return winner + " based on hand. He got a four of a kind hand: A, A, A, A, J or " + player1Hand;
 }
 
 function loser() {
   var player2Hand = [12, 12, 11, 1, 13];
-  var loser = "player2 is the loser of the game";
+  var player2Name = "Carl";
+  var loser = player2Name + " is the loser of the game";
   return loser + " based on hand. He got a one pair hand: Q, Q, J, A, K or " + player2Hand;
 }
 
