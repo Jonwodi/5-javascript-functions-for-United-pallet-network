@@ -73,21 +73,22 @@ function cardGame() {
   console.log(w);
   var l = loser();
   console.log(l);
-  return "card ranks: A = 1, J = 11, Q = 12, K = 13." + " Winning hands(in order of best to worst hand):" + " Four of a kind: Four cards of the same rank." + " Full House: Three cards of the same rank, and two cards of a different matching rank." + " Straight: Five cards in sequence." + " Three of a kind: Three cards of the same rank." + " Two pair: Two cards of a matching rank and another two cards of a different matching rank." + " One pair: Two cards of a matching rank." + " If both players have none of the above, it is a draw." + " If both players have the same type of hand, it is a draw. ";
+  var gameInfo = "card ranks: A = 1, J = 11, Q = 12, K = 13." + " Winning hands(in order of best to worst hand):" + " Four of a kind: Four cards of the same rank." + " Full House: Three cards of the same rank, and two cards of a different matching rank." + " Straight: Five cards in sequence." + " Three of a kind: Three cards of the same rank." + " Two pair: Two cards of a matching rank and another two cards of a different matching rank." + " One pair: Two cards of a matching rank." + " If both players have none of the above, it is a draw." + " If both players have the same type of hand, it is a draw. ";
+  return gameInfo;
 }
 
 function winner() {
   var player1Hand = [1, 1, 1, 1, 11];
   var player1Name = "Sam";
-  var winner = player1Name + " is the winner of the game";
-  return winner + " based on hand. He got a four of a kind hand: A, A, A, A, J or " + player1Hand;
+  var winner = player1Name + " is the winner of the game" + " based on hand. He got a four of a kind hand: A, A, A, A, J or " + player1Hand;;
+  return winner;
 }
 
 function loser() {
   var player2Hand = [12, 12, 11, 1, 13];
   var player2Name = "Carl";
-  var loser = player2Name + " is the loser of the game";
-  return loser + " based on hand. He got a one pair hand: Q, Q, J, A, K or " + player2Hand;
+  var loser = player2Name + " is the loser of the game" + " based on hand. He got a one pair hand: Q, Q, J, A, K or " + player2Hand;
+  return loser;
 }
 
 console.log(cardGame());
