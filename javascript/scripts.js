@@ -28,24 +28,24 @@ other supporting functions. */
 
 
 // Task 1
-function halveNumber() {
-  var number1 = 20;
-  var number2 = 2;
-  var totalNumber = number1 / number2;
+function halveNumber(numb1, numb2) {
+  var numb1;
+  var numb2;
+  var totalNumber = numb1/ numb2;
   return totalNumber;
 }
 
 
-console.log(halveNumber());
+console.log(halveNumber(40,2));
 
 
 // Task 2
-function multiplyAndAddNumber() {
-  var multiplyAndAdd = (6 * 2) + 3;
+function multiplyAndAddNumber(numb1, numb2, numb3) {
+  var multiplyAndAdd = numb1 * numb2 + numb3;
   return multiplyAndAdd;
 }
 
-console.log(multiplyAndAddNumber());
+console.log(multiplyAndAddNumber(6,2,3));
 
 
 //Task 3
